@@ -40,12 +40,17 @@
 <dialog id="hireDialog">
     <h2>Available for internships</h2>
 
-    <p>I am available for internships and freelance web projects from June 2027.</p>
-
-    <p>Send me a message or download my CV.</p>
+    <p>
+        I am available for internships and freelance web projects
+        from June 2027.
+    </p>
+    <p>
+    Send me a message or download my
+    <abbr title="Curriculum Vitae">CV</abbr>.
+</p>
 
     <button type="button"
-            onclick="document.getElementById('hireDialog').close()">
+        onclick="document.getElementById('hireDialog').close()">
         Close
     </button>
 </dialog>
@@ -102,7 +107,7 @@
                 </li>
                 <li>Web Development
                     <ul>
-                        <li>HTML</li>
+                        <li><abbr title="HyperText Markup Language">HTML</abbr></li>
                         <li>CSS (learning)</li>
                         <li>JavaScript (next)</li>
                     </ul>
@@ -160,7 +165,10 @@
         <section id="education">
             <h2>Education</h2>
             <h3>BSc in Software Engineering</h3>
-            <p>Addis Ababa Science and Technology University, 2023-present</p>
+            <p>
+    <abbr title="Addis Ababa Science and Technology University">AASTU</abbr>,
+    <time datetime="2023-09">September 2023</time> – present
+</p>
             <p>
     <label for="degree">Degree progress:</label>
     <progress id="degree" value="40" max="100">40%</progress>
@@ -235,7 +243,7 @@
 
             <h3>Connect with me</h3>
             <img src="image/connect-banner.png" usemap="#connectmap" alt="Connect banner: GitHub, LinkedIn, Email" width="600" height="200">
-            <h3>Send me a message</h3>
+         
 <form action="thankyou.html" method="post" enctype="multipart/form-data">
 <h3>Find My University</h3>
 
@@ -341,6 +349,7 @@
 
     <footer>
         <p>Copyright 2026 Efrata Assefa. All rights reserved.</p>
+         <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
     </footer>
     <script>
     const rating = document.getElementById("rating");
