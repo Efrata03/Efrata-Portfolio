@@ -15,6 +15,10 @@
 <body>
 
     <header>
+        <canvas id="logo" width="120" height="120" role="img" aria-label="EA personal logo">
+            EA
+        </canvas>
+        <br>
         <img src="image/profile.png" alt="My Profile" width="200" height="200">
         <h1>Efrata Assefa</h1>
         <p>Software Engineering student and aspiring web developer.</p>
@@ -144,6 +148,7 @@
            optimum="100" value="20">20%</meter>
     20%
 </p>
+<canvas id="skillChart" width="300" height="150"></canvas>
         </section>
 
         <section id="projects">
@@ -357,13 +362,98 @@
        <p>&copy; 2026 Efrata Assefa. All rights reserved.</p>
          <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
     </footer>
-    <script>
-    const rating = document.getElementById("rating");
-    const ratingValue = document.getElementById("rating-value");
+   
+<script>
+// ==================================
+// 1. DRAW EA PERSONAL LOGO
+// ==================================
+const logoCanvas = document.getElementById("logo");
 
+if (logoCanvas) {
+    const logoCtx = logoCanvas.getContext("2d");
+
+    if (logoCtx) {
+        // Blue square
+        logoCtx.fillStyle = "#1f5fa8";
+        logoCtx.fillRect(0, 0, 120, 120);
+
+        // White circle
+        logoCtx.beginPath();
+        logoCtx.arc(60, 60, 45, 0, 2 * Math.PI);
+        logoCtx.fillStyle = "white";
+        logoCtx.fill();
+
+        // EA initials
+        logoCtx.fillStyle = "#1f5fa8";
+        logoCtx.font = "bold 36px Arial";
+        logoCtx.textAlign = "center";
+        logoCtx.textBaseline = "middle";
+        logoCtx.fillText("EA", 60, 60);
+    }
+}
+
+// ==================================
+// 2. RATING SLIDER
+// ==================================
+const rating = document.getElementById("rating");
+const ratingValue = document.getElementById("rating-value");
+
+if (rating && ratingValue) {
     rating.addEventListener("input", function() {
         ratingValue.textContent = rating.value;
     });
+}
+
+// ==================================
+// 3. DRAW SKILL BAR CHART
+// ==================================
+const chartCanvas = document.getElementById("skillChart");
+
+if (chartCanvas) {
+    const ctx = chartCanvas.getContext("2d");
+
+    if (ctx) {
+        const skills = [
+            { name: "C++", level: 85 },
+            { name: "Python", level: 65 },
+            { name: "JavaScript", level: 65 },
+            { name: "HTML", level: 70 },
+            { name: "CSS", level: 35 }
+        ];
+
+        const barWidth = 30;
+        const gap = 20;
+        const startX = 20;
+        const baseY = 120;
+
+        ctx.clearRect(0, 0, 300, 150);
+
+        skills.forEach((skill, i) => {
+            const x = startX + i * (barWidth + gap);
+            const barHeight = skill.level;
+
+            // Draw blue bar
+            ctx.fillStyle = "#1f5fa8";
+            ctx.fillRect(
+                x,
+                baseY - barHeight,
+                barWidth,
+                barHeight
+            );
+
+            // Draw language name
+            ctx.fillStyle = "#000000";
+            ctx.font = "9px Arial";
+            ctx.textAlign = "center";
+            ctx.fillText(
+                skill.name,
+                x + barWidth / 2,
+                140
+            );
+        });
+    }
+}
 </script>
+
 </body>
 </html>
