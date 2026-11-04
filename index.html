@@ -32,7 +32,23 @@
     <main>
 
         <p>Welcome to my software engineering portfolio.</p>
+        <button type="button"
+        onclick="document.getElementById('hireDialog').showModal()">
+    Hire me
+</button>
 
+<dialog id="hireDialog">
+    <h2>Available for internships</h2>
+
+    <p>I am available for internships and freelance web projects from June 2027.</p>
+
+    <p>Send me a message or download my CV.</p>
+
+    <button type="button"
+            onclick="document.getElementById('hireDialog').close()">
+        Close
+    </button>
+</dialog>
         <section id="about">
             <h2>About Me</h2>
             <p>I am a 3<sup>rd</sup> year <strong>Software Engineering</strong> student. I <em>really</em> enjoy building websites, and my current goal is to <mark>become a full-stack web developer</mark>.</p>
