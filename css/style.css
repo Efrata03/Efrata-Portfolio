@@ -9,7 +9,9 @@
    Accent   hsl(37, 91%, 55%)
    Light    #f4f6f9
 */
-
+html {
+    font-size: 16px;
+}
 /* ---------- Base ---------- */
 body {
     background-color: #f4f6f9;
@@ -20,14 +22,17 @@ body {
 /* ---------- Headings ---------- */
 h1 {
     color: #1f5fa8;
+    font-size: 2.5rem;
 }
 
 h2 {
     color: rgb(31, 95, 168);
+    font-size: 1.8rem;
 }
 
 h3 {
     color: hsl(212, 69%, 39%);
+    font-size: 1.2rem;
 }
 
 /* ---------- Highlight ---------- */
