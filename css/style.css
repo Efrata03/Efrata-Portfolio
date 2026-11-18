@@ -1,12 +1,36 @@
+
 /* ==========================================
    Portfolio stylesheet — Efrata Assefa
    ========================================== */
+
+/* Palette
+   Primary  #1f5fa8
+   Dark     #22313f
+   Accent   hsl(37, 91%, 55%)
+   Light    #f4f6f9
+*/
+
 /* ---------- Base ---------- */
 body {
-    background-color: lightyellow;   /* very light grey-blue */
+    background-color: #f4f6f9;
+    color: #22313f;
     font-family: Arial, sans-serif;
 }
+
 /* ---------- Headings ---------- */
 h1 {
-    color: orange;   /* test colour, replaced in Lab 16 */
+    color: #1f5fa8;
+}
+
+h2 {
+    color: rgb(31, 95, 168);
+}
+
+h3 {
+    color: hsl(212, 69%, 39%);
+}
+
+/* ---------- Highlight ---------- */
+mark {
+    background-color: rgba(245, 166, 35, 0.35);
 }
