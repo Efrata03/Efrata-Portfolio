@@ -327,7 +327,7 @@ ul ul {
 }
 /* ---------- Header ---------- */
 header {
-    background-image: url("../images/pattern.png"),
+    background-image: url("../image/pattern.png"),
                       linear-gradient(135deg, #1f5fa8, #0b2d55);                 
     color: white;
 }
