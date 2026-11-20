@@ -9,11 +9,16 @@
    Accent   hsl(37, 91%, 55%)
    Light    #f4f6f9
 */
+/* ---------- Reset ---------- */
+* {
+    box-sizing: border-box;
+}
 html {
     font-size: 16px;
 }
 /* ---------- Base ---------- */
 body {
+    margin:0;
     background-color: #f4f6f9;
     color: #22313f;
     font-family: 'Poppins', Arial, sans-serif;
@@ -204,4 +209,21 @@ tbody tr:nth-child(even) {
 /* ---------- Links to own pages ---------- */
 a[href$=".html"]:not(nav a)::after {
     content: " →";
+}
+/* ---------- Layout ---------- */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
 }
