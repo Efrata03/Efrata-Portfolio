@@ -97,7 +97,7 @@ code, pre {
 /* ---------- Contact Section ---------- */
 #contact {
     background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
-                      url("../images/contact-bg.jpg");
+                      url("../image/contact-bg.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
