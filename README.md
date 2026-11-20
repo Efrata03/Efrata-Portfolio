@@ -1,37 +1,46 @@
 # Efrata Assefa - Portfolio
 
 ## About
-I am a Software Engineering student and aspiring web developer.
+
+I am a third-year Software Engineering student at Addis Ababa Science and Technology University and an aspiring web developer interested in building useful and user-friendly applications.
 
 ## Technologies Used
+
 - HTML5
+- CSS3
 
 ## Features
+
 - About Me section
-- Skills section
-- Projects gallery
+- Skills section with visual skill meters
+- Projects gallery featuring Pharmacy Management System and Tutor-Learner Matching System
 - Education and academic record
-- Contact information
+- Contact form with input validation
 - Downloadable CV
 - Connect banner with clickable links
+- Audio introduction
+- Embedded YouTube video
+- University location map
+- Interactive dialog for internship availability
+- Styled project cards with hover effects
+- Gradient backgrounds and background images
+- Image opacity and hover effects
+- Responsive page layout
 
 ## Project Structure
-- index.html - Main portfolio homepage
-- projects.html - Projects gallery and summary
-- image/ - Website images
-- File/ - CV document
+
+- `index.html` - Main portfolio homepage
+- `projects.html` - Projects gallery and details
+- `thankyou.html` - Contact form confirmation page
+- `css/style.css` - Portfolio stylesheet
+- `image/` - Website images and background graphics
+- `media/` - Audio and video files
+- `File/` - CV document
 
 ## How to View
-Open index.html in your web browser.
+
+Open the project folder in Visual Studio Code and use Live Server to run `index.html` in your browser.
 
 ## Author
+
 Efrata Assefa
-<details open>
-    <summary>How I built it</summary>
-    <ol>
-        <li>Designed an interactive menu using C++.</li>
-        <li>Created options for students to choose their roles.</li>
-        <li>Added course selection, including Programming Fundamentals and Discrete Math.</li>
-        <li>Implemented matching logic to help students find study support.</li>
-    </ol>
-</details>
