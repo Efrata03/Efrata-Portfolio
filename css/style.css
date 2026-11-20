@@ -161,3 +161,47 @@ h2::before {
 h2 + p::first-line {
     font-weight: 600;
 }
+/* ---------- Link states ---------- */
+a:link {
+    color: #1f5fa8;
+}
+
+a:visited {
+    color: #6a3fa0;
+}
+
+a:hover {
+    color: hsl(37, 91%, 45%);
+    text-decoration: underline;
+}
+
+a:active {
+    color: #b03a2e;
+}
+/* ---------- Button hover ---------- */
+.btn:hover {
+    background-color: #174a84;
+}
+
+.btn-secondary:hover {
+    background-color: #445566;
+}
+
+/* ---------- Positions ---------- */
+ol li:first-child {
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eef2f7;
+}
+
+/* ---------- Card hover ---------- */
+.card:hover {
+    background-color: #eef2f7;
+}
+
+/* ---------- Links to own pages ---------- */
+a[href$=".html"]:not(nav a)::after {
+    content: " →";
+}
