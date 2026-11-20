@@ -131,3 +131,33 @@ abbr[title] {
     cursor: help;
     text-decoration: underline dotted;
 }
+[class*="btn"] {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* ---------- Link icons ---------- */
+a[href^="https"]::after {
+    content: " ";
+}
+
+a[href^="mailto"]::before {
+    content: " ";
+}
+
+a[href^="tel"]::before {
+    content: " ";
+}
+
+a[download]::before {
+    content: " ";
+}
+
+/* ---------- Decorated headings ---------- */
+h2::before {
+    content: "// ";
+    color: hsl(37, 91%, 55%);
+}
+
+h2 + p::first-line {
+    font-weight: 600;
+}
