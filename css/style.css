@@ -221,6 +221,7 @@ header {
     text-align: center;
     padding: 2rem 1rem;
 }
+/* ---------- Header ---------- */
 
 footer {
     text-align: center;
@@ -319,4 +320,10 @@ caption {
 /* ---------- Lists ---------- */
 ul ul {
     list-style-type: square;
+}
+/* ---------- Header ---------- */
+header {
+    background-image: url("../images/pattern.png"),
+                      linear-gradient(135deg, #1f5fa8, #0b2d55);                 
+    color: white;
 }
