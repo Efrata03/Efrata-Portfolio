@@ -250,3 +250,51 @@ label[for^="lvl"] {
     display: inline-block;
     width: 7rem;
 }
+/* ---------- Section Spacing ---------- */
+section,
+aside {
+    margin: 2rem 0;
+    padding: 1.5rem;
+}
+
+aside {
+    border-left: 6px solid hsl(37, 91%, 55%);
+}
+/* ---------- Project Cards ---------- */
+.card {
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid #d5dde8;
+}
+/* ---------- Responsive Media ---------- */
+.card img,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    display: block;
+    max-width: 100%;
+}
+/* ---------- Button Spacing ---------- */
+.btn {
+    padding: 0.6rem 1.2rem;
+    margin: 0.5rem 0.25rem 0 0;
+}
+/* ---------- Fieldset Styling ---------- */
+fieldset {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border: 2px solid #d5dde8;
+}
+/* ---------- Input Padding ---------- */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    padding: 0.4rem;
+}
