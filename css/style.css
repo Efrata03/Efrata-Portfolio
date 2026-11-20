@@ -354,3 +354,18 @@ header .btn {
     background-color: hsl(37, 91%, 55%);
     color: #22313f;
 }
+/* ---------- Aside Background ---------- */
+aside {
+    background-image: radial-gradient(circle at top left, #fff3dc, white 70%);
+}
+
+/* ---------- Footer Background ---------- */
+footer {
+    background-color: #22313f;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ---------- Dialog Backdrop ---------- */
+dialog::backdrop {
+    background-color: rgba(11, 45, 85, 0.6);
+}
