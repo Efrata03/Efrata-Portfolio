@@ -21,13 +21,24 @@ body {
     line-height: 1.6;
 }
 /* ---------- Headings ---------- */
+h1, h2, h3 {
+    line-height: 1.2;
+    font-weight: 600;
+}
+
 h1 {
     color: #1f5fa8;
     font-size: 6vw;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+
 h2 {
     color: rgb(31, 95, 168);
     font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 h3 {
@@ -39,19 +50,8 @@ h3 {
 mark {
     background-color: rgba(245, 166, 35, 0.35);
 }
+
 /* ---------- Text Properties ---------- */
-h1 {
-    text-align: center;
-    font-weight: 700;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-h2 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
-}
-
 a {
     color: #1f5fa8;
     text-decoration: none;
@@ -65,3 +65,28 @@ blockquote {
 code, pre {
     font-family: 'Courier New', monospace;
 }
+/* ---------- Components ---------- */
+.tagline {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #5a6b7d;
+    letter-spacing: 1px;
+}
+
+.btn {
+    background-color: #1f5fa8;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #5a6b7d;
+}
+
+.card {
+    background-color: white;
+}
+
