@@ -96,7 +96,11 @@ code, pre {
 }
 /* ---------- Contact Section ---------- */
 #contact {
-    background-color: #e8eef6;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+                      url("../images/contact-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 /* ---------- Combinators ---------- */
 
